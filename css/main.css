@@ -114,10 +114,8 @@ h1 {
     font-size: 3rem;
     margin: 1rem;
 }
-.header h1 a {
-    /* background: url(../img/luzmcosta_avatar.png) no-repeat top center;
-    background-size: 6rem;
-    padding-top: 8rem; */
+.header {
+    padding-bottom: 6rem;
 }
 nav,
 div.logo,
