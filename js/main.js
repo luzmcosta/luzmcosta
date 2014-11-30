@@ -277,6 +277,9 @@ Phrases = {
         // Passes condition circa L125, if $(".play").is(".fa-play"), scroll.
         this.togglePlay( false, true );
 
+        // Set view.
+        $( ".fa-refresh" ).addClass( "fa-list" ).removeClass( "fa-refresh" );
+
         return this;
     },
     /**
