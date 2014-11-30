@@ -163,6 +163,9 @@ p {
 .fa-heart {
     color: #EC2512;
 }
+div#options i {
+    padding: 0.5rem 1rem;
+}
 
 /* Experiments */
 .card div.logo,

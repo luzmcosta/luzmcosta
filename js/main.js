@@ -39,9 +39,6 @@ Phrases = {
         // Set content to scroll.
         this.scroll();
 
-        // Toggle options in/out of view.
-        $( this.el ).on( "mouseover", this.options.bind( this ) );
-
         // Set click events on options.
         this.setOptions();
     },
