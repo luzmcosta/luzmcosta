@@ -123,27 +123,22 @@ h1 {
 }
 nav,
 div.logo,
-.header p,
+#posts,
 .contact {
     text-align: center;
 }
 .logo h1 {
     margin: 0;
 }
-.summary span {
+#summary {
     clear: both;
+    font-size: 2rem;
+}
+#summary a {
+    color: rgb(105, 50, 113);
+}
+#summary span {
     display: block;
-}
-.summary span:nth-child(2) {
-    font-size: 1.65rem;
-}
-.summary span:nth-child(3) {
-    font-size: 1.55rem;
-    line-height: 1.8;
-}
-.summary span:nth-child(4) {
-    font-size: 1.45rem;
-    line-height: 1.8;
 }
 .social ul {
     padding: 0;
@@ -165,6 +160,9 @@ p {
     font-size: 1.2rem;
 }
 
+.fa-heart {
+    color: #EC2512;
+}
 
 /* Experiments */
 .card div.logo,
@@ -174,10 +172,10 @@ p {
 .card .contact {
     padding-left: 8rem;
 }
-.card .summary {
+.card #summary {
     margin: 1rem;
 }
-.card .summary p {
+.card #summary p {
     font-size: 1.2rem;
 }
 .card picture {
