@@ -1,0 +1,24 @@
+{
+  "name": "luzmcosta",
+  "version": "0.1.0",
+  "description": "Luz M. Costa's personal site.",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luzmcosta/luzmcosta.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Luz M. Costa <luzmcosta@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luzmcosta/luzmcosta/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5"
+  }
+}
