@@ -180,7 +180,7 @@ Phrases = {
     phrases: {
         default: "designs user experiences.",
         apps: "builds proprietary web applications.",
-        bloat: "likes cleaning up bloated websites in her free time",
+        bloat: "enjoys sweeping away the cruft in her free time",
         freeTime: "jokes about having free time",
         style: "likes Bauhaus",
         sites: "designs websites.",
