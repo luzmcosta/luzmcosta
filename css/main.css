@@ -97,6 +97,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html, body {
+    height: 100%;
+}
 body {
     color: rgb(24, 24, 24);
     font-family: 'Josefin Sans', Century Gothic, sans-serif;
@@ -115,7 +118,8 @@ h1 {
     margin: 1rem;
 }
 .header {
-    padding-bottom: 6rem;
+    height: 100%;
+    padding-bottom: 2rem;
 }
 nav,
 div.logo,
@@ -160,15 +164,7 @@ p {
 .contact {
     font-size: 1.2rem;
 }
-footer {
-    background: black;
-    bottom: 0;
-    color: white;
-    font-size: small;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-}
+
 
 /* Experiments */
 .card div.logo,
