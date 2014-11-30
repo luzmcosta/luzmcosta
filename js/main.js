@@ -62,7 +62,10 @@ Phrases = {
             .on( "click", this.togglePlay );
 
         // Set event on list option
-        $( ".list" ).off().on( "click", this.list.bind( this ) );
+        $( ".fa-list" ).off().on( "click", this.list.bind( this ) );
+
+        // Set event on refresh option
+        $( ".fa-refresh" ).off().on( "click", this.reset.bind( this ) );
     },
     /**
      * Toggle the pause/play button's icon and functionality.
@@ -112,6 +115,10 @@ Phrases = {
      */
     stop: function( e ) {
         console.log("STOP", e );
+
+        var isPlay = $( ".play" ).is( ".fa-play" ),
+            isRefresh = $( ".list" ).is( ".fa-refresh" );
+
         // Set method to execute at set interval.
         clearInterval( this.interval );
 
@@ -119,13 +126,30 @@ Phrases = {
         this.playing = false;
 
         // If starting...
-        if ( $( ".play" ).is( ".fa-play" ) ) {
+        if ( isPlay || isRefresh ) {
             // Set the view to update at intervals.
             this.scroll();
         }
 
         // Set random phrase on view.
         return true;
+    },
+    /**
+     * Restart the process.
+     */
+    reset: function() {
+        // Stop all scrolling.
+        this.stop();
+
+        // Set play button.
+        // Passes condition circa L125, if $(".play").is(".fa-play"), scroll.
+        this.togglePlay( false );
+
+        // Reset index to 0.
+        this.current = 0;
+
+        // Start scrolling.
+        this.scroll();
     },
     /**
      * Updates the view every 2 seconds with a new phrase.
@@ -248,6 +272,10 @@ Phrases = {
         // Set random phrase on view.
         $( this.el ).html( phrase );
 
+        // Set play button.
+        // Passes condition circa L125, if $(".play").is(".fa-play"), scroll.
+        this.togglePlay( false, true );
+
         return this;
     },
     /**
@@ -270,6 +298,13 @@ Phrases = {
         $.each( phrases, function( name, phrase ) {
             $el.append( "<span>" + phrase + "</span>" );
         });
+
+        // Set view.
+        $( ".list" ).toggleClass( "fa-list" ).toggleClass( "fa-refresh" );
+
+        // Set play button.
+        // Passes condition circa L125, if $(".play").is(".fa-play"), scroll.
+        this.togglePlay( true, false );
 
         return this;
     }
