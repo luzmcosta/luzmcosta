@@ -132,9 +132,11 @@ div.logo,
 }
 .summary span:nth-child(3) {
     font-size: 1.55rem;
+    line-height: 1.8;
 }
 .summary span:nth-child(4) {
     font-size: 1.45rem;
+    line-height: 1.8;
 }
 .social ul {
     padding: 0;
@@ -149,7 +151,7 @@ div#about {
 p {
     font-size: 2rem;
     font-weight: 400;
-    margin: 2rem auto;
+    margin: 1rem auto;
     max-width: 900px;
 }
 .contact {
