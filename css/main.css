@@ -123,6 +123,9 @@ div.logo,
 .contact {
     text-align: center;
 }
+.logo h1 {
+    margin: 0;
+}
 .summary span {
     clear: both;
     display: block;
