@@ -182,7 +182,7 @@ Phrases = {
         apps: "builds proprietary web applications.",
         bloat: "likes cleaning up bloated websites in her free time",
         freeTime: "jokes about having free time",
-        style: "is inspired by Bauhaus",
+        style: "likes Bauhaus",
         sites: "designs websites.",
         designui: "designs user interfaces.",
         users: "is getting to know her users.",
