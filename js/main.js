@@ -201,7 +201,7 @@ Phrases = {
         qunit: "uses QUnit.",
         bodhi: "has a cat named Bodhi.",
         scrolling: "thought to herself, \" I better give users a button to stop this scrolling.\"",
-        owls: "thinks <a hre'http://j.mp/lobowls'>the lobotomized owl</a> is brilliant! * + *",
+        owls: "thinks <a href='http://j.mp/lobowls'>the lobotomized owl</a> is brilliant! * + *",
         es6: "is perusing <a href='http://j.mp/es6drafts'>the latest ECMAScript 6 draft</a>.",
         raygun: "is playing around with <a href='https://raygun.io'>RayGun</a> for error logging.",
         wip: "has some work to do"
