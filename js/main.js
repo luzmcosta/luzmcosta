@@ -2,7 +2,7 @@
  * JavaScript for luzmcosta.com
  *
  * @author Luz M. Costa <luzmcosta@gmail.com>
- * @updated 11.30.2014
+ * @updated 12.07.2014
  * @version 0.1
  */
 
@@ -182,6 +182,7 @@ Phrases = {
         apps: "builds proprietary web applications.",
         bloat: "enjoys sweeping away the cruft in her free time",
         freeTime: "jokes about having free time",
+        posts: "doesn't have time for posts",
         style: "likes Bauhaus",
         sites: "designs websites.",
         designui: "designs user interfaces.",
